@@ -3,15 +3,19 @@ const path = require("path");
 require("colors");
 const { nanoid } = require("nanoid");
 
-/*
- * Раскомментируй и запиши значение
- * const contactsPath = ;
- */
 
-// TODO: задокументировать каждую функцию
-function listContacts() {
-  // ...твой код
-}
+
+const contactsPath = path.join(__dirname, 'db', 'contacts.json');
+  
+  // TODO: задокументировать каждую функцию
+  const  listContacts = async () => {
+ try {
+		const contacts = await fs.readFile(contactsPath, { encoding: 'utf-8' })
+		return JSON.parse(contacts)
+	} catch (error) {
+		console.log(`Error: ${error.message}`.red)
+	}
+  };
 
 function getContactById(contactId) {
   // ...твой код
