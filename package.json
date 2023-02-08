@@ -20,8 +20,7 @@
   "homepage": "https://github.com/Nataliia0202/nodeJS-hw1#readme",
   "dependencies": {
     "colors": "^1.4.0",
-    "commander": "^10.0.0",
-    "nanoid": "^4.0.1"
+    "commander": "^10.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
