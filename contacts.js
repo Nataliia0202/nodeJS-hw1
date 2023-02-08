@@ -6,12 +6,12 @@ const { randomUUID } = require("crypto");
 
 const contactsPath = path.join(__dirname, './db/contacts.json');
   
-  // TODO: задокументировать каждую функцию
+  
   const  listContacts = async () => {
  try {
    const contacts = await fs.readFile(contactsPath, { encoding: 'utf-8' })
    const result = JSON.parse(contacts);
-  //  console.log(result)
+ 
 		return result;
 	} catch (error) {
 		console.log(`Error: ${error.message}`.red)
